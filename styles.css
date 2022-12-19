@@ -1,0 +1,120 @@
+body{
+    font-family: 'Karla', sans-serif;
+    background-color: rgb(240,240,240);
+}
+.mainComponent{
+        background-color: white;
+        margin: 0 auto;
+        margin-top: 100px;
+        border-radius: 1%;
+        display: flex;
+        flex-direction: column;
+        height: 35%;
+        width: 50%;
+}
+.cardModel{
+    padding: 30px;
+    text-align: justify;
+}
+.mainCard{
+    height: 50%;   
+}
+.mainCard h2{
+    color: rgb(78,179,173);
+}
+.mainCard h3{
+    color: rgb(212,231,124);
+}
+.mainCard p{
+    color: rgb(181,186,190);
+    margin-bottom: 5px;
+    margin-top: 10px;
+    font-size: 1.2vw;
+}
+.secundaryCard{
+    display: flex;
+}
+#priceTag{
+    font-size: 3vw;
+    font-weight: bold;
+    display: inline ;
+    margin-right: 10px;
+}
+.monthlySubscription{
+    width: 50%;
+    background-color: rgb(43,179,177);
+    color: white;
+    font-size: 1.2vw;
+}
+.whyUs{
+    width: 50%;
+    background-color: rgb(74,190,189);
+    color: white;
+}
+.whyUs a{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: lightgray;
+    display: block;
+    font-size: 1.2vw;
+}
+.buttonSignUp{
+    background-color: rgb(177,226,85);
+    display: block;
+    margin-top: 30px;
+    width: 100%;
+    height: 20%;
+    border-radius: 5px;
+    border: 0ch;
+    box-shadow: 0px 0px 14px 3px rgba(0,0,0,0.23);
+    color: white;
+    font-size: 1.3vw;
+}
+.buttonSignUp:hover{
+    font-size: 1.5vw;
+    transition: calc(12);
+}
+@media screen and (max-width: 768px){
+    .mainComponent{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 50px;
+        text-align: justify;
+    }
+    .cardModel{
+        padding: 20px;
+    }
+    #priceTag{
+        font-size: 8vw;
+    }
+    .buttonSignUp{
+        width: 100%;
+        height: 60px;
+        font-size: 4vw;
+        font-weight: bold;
+    }
+    .buttonSignUp:hover{
+        font-size: 4vw;
+    }
+    .mainCard p{
+        display: inline;
+        font-size: 3vw;
+    }
+    .secundaryCard{
+        display: flex;
+        flex-direction: column;
+    }
+    .secundaryCard div{
+        width: auto;
+        height: auto;
+    }
+    .whyUs a{
+        font-size: 3vw;
+    }
+    .monthlySubscription{
+        font-size: 3vw;
+    }
+    
+}
